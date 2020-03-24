@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Noto Sans CJK TC,BOLD';
+    src: url(font/NotoSansCJKtc-Bold.otf) format("opentype");
+}
+@font-face {
+    font-family: 'Noto Sans CJK TC,Regular';
+    src: url(font/NotoSansCJKtc-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Microsoft Yi Baiti';
+  src: url(font/Microsoft\ Yi\ Baiti.ttf) format("truetype");
+}
+/**/
+html{
+    height:100%;
+}
+body {
+    min-height: 100%;
+    margin: 0px;
+    padding:0px;
+    color: #ffffff;
+}
+
+div {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: hidden;
+    position: absolute;
+}
+.cover {
+    object-fit: cover;
+}
+.blur {
+    filter: blur(5px);
+}
+ul{
+    margin: 0;
+    padding: 20px;
+    height: 200px;
+    list-style-type: none;
+}
+#big_bar {
+    position: absolute;
+    top: 0%;
+}
+.horizon {
+    width: 1000px;
+    position: absolute;
+    right: 0%;
+}
+li {
+    float: right;
+}
+#logo {
+    position: absolute;
+    left: 0%;
+    width: 200px;
+}
+#logo img{
+    width: 150px;
+    height: 95px;
+    margin: 10px;
+}
+.bar1{
+    font-family: 'Microsoft Yi Baiti';
+    font-size: 40px;
+    color:#ffffff;
+    text-decoration: none;
+    box-shadow: 0 1pt #ffffff;
+    padding-bottom: 3px;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 130%;
+    height: 160px;
+    text-align: left;
+    z-index: 1;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+.bar2 {
+    font-family: 'Microsoft Yi Baiti';
+    font-size: 30px;
+    color: #3288b0;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#store img{
+    margin: 10px;
+    width: 110px;
+    height: 45px;
+}
+#car img{
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+}
+#title {
+    position: absolute;
+    top: 20%;
+    text-align: right;
+}
+#title h1, #title div, #title p {
+    position: relative;
+    right: 5%;
+}
+
+#title h1 {
+    font-size: 50px;
+    font-family: 'Noto Sans CJK TC,BOLD';
+    padding-bottom: 7%;
+    opacity: 0%;
+}
+
+#learn {
+    width: 230px;
+    height: 50px;
+}
+
+#title p {
+    font-family: 'Noto Sans CJK TC,Regular';
+    font-size: 19px;
+    opacity: 0%;
+}
+
+#arrow {
+    position: absolute;
+    top: 50%;
+}
+#arrow img {
+    right: 10px;
+    width: 30px;
+    margin: 10px;
+}
+#arrow .right{
+    float: right;
+}
+
+.bar1:hover{
+    font-weight: bold;
+    box-shadow: 0 9pt #ffffff;
+}
+#store img:hover{
+    opacity: 0.7;
+} 
+#car img:hover{
+    opacity: 0.7;
+} 
+#learn:hover{
+    opacity: 0.7;
+} 
+#arrow .right:hover,#arrow .left:hover {
+    opacity: 0.7;
+}
+
+#learn{
+    animation: btn_move 1s ease 2s 1 alternate backwards;
+}
+#title p {
+    animation: text_move 1s ease 2s 1 alternate forwards;
+}
+@keyframes btn_move {
+    from {height: 0px;}
+    to {opacity: 100%;height: 50px;}
+}
+@keyframes text_move {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+h1{
+    animation: first_move 1s ease 1s 1 alternate forwards;
+}
+@keyframes first_move {
+    from {opacity: 0%;top: -5%;}
+    to {opacity: 100%; top: 0%;}
+}
