@@ -39,11 +39,10 @@ div {
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
+    align-items: stretch;
     position: absolute;
 }
-#second {
-    /* display: none; */
-}
+
 .cover {
     object-fit: cover;
 }
