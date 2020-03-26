@@ -20,8 +20,8 @@ html{
 }
 body {
     min-height: 100%;
-    margin: 0px;
-    padding:0px;
+    margin: 0;
+    padding:0;
     color: #ffffff;
 }
 
@@ -33,19 +33,17 @@ div {
 #slider {
     position: relative;
 }
-.background {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: hidden;
-    align-items: stretch;
+.background{
     position: absolute;
+    height: 100vh;
 }
 
-.cover {
+.background img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
+
 .blur {
     filter: blur(5px);
 }
